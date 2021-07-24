@@ -1,0 +1,14 @@
+{
+    "name": "bfy/atlassian-delivery",
+    "version": "0.1",
+    "authors": [{
+        "name": "Bruno FERRY",
+        "email": "bruno.ferry@qobuz.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "bfy\\": "src/"
+        }
+    }
+}
