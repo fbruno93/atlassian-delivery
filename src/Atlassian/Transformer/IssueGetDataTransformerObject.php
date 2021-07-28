@@ -14,6 +14,7 @@ class IssueGetDataTransformerObject extends AbstractDataTransformerObject
 
     private $labelsAvailable = [
         'SF1',
+        'SF1API',
         'SF4FRONT',
         'SF4API',
         'SF1BO'
