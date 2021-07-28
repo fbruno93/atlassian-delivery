@@ -58,7 +58,7 @@ use bfy\Model\Delivery;
 <?php foreach ($ticket->getDependsOn() as $key => $title): ?>
     <ac:task>
         <ac:task-status>incomplete</ac:task-status>
-        <ac:task-body><a data-card-appearance="inline" href="<?= getenv('JIRA_WEB_URL').$key ?>"><?= "[$key] - $title" ?></a></ac:task-body>
+	<ac:task-body><?= $ticket->getKey() ?> <a data-card-appearance="inline" href="<?= getenv('JIRA_WEB_URL').$key ?>"><?= "[$key] - $title" ?></a></ac:task-body>
     </ac:task>
 <?php endforeach; ?>
 <?php endforeach; ?>
