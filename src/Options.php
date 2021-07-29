@@ -53,7 +53,8 @@ class Options
 
     public function doEditSummary(): bool
     {
-        return isset($this->options['summary']) || isset($this->options['s']);
+        //isset($this->options['summary']) || isset($this->options['s']);
+        return false;
     }
 
     public function askHelp(): bool
