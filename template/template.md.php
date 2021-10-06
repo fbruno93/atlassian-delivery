@@ -26,7 +26,7 @@ sf4-api: <?= $bl->getVersions('sf4api') ?>
 | Ticket | Titre | Cible | Branche |
 |--------|-------|-------|---------|
 <?php foreach ($bl->getTickets() as $ticket): ?>
-<?= $ticket->getKey() ?> | <?= $ticket->getTitle() ?> | <?= implode(', ', $ticket->getLabels()) ?> | feature-<?= $ticket->getKey() ?>
+<?= $ticket->getKey() ?> | <?= $ticket->getTitle() ?> | <?= implode(', ', $ticket->getLabels()) ?> |
 
 <?php endforeach; ?>
 

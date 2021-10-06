@@ -46,7 +46,7 @@ use bfy\Model\Delivery;
             <td><p><a href="<?= getenv('JIRA_WEB_URL').$ticket->getKey()?>"><?= $ticket->getKey() ?></a></p></td>
             <td><p><?= $ticket->getTitle() ?></p></td>
             <td><p><?= implode(', ', $ticket->getLabels()) ?></p></td>
-            <td><p>feature-<?= $ticket->getKey() ?></p></td>
+            <td><p></p></td>
         </tr>
 <?php endforeach; ?>
     </tbody>
