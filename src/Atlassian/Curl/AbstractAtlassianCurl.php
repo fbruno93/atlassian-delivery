@@ -31,6 +31,7 @@ abstract class AbstractAtlassianCurl implements AtlassianCurlInterface
         $curlVersion = curl_version()['version'];
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             "Authorization: Basic $this->apiToken",
             'Content-Type: application/json; charset=utf-8',
